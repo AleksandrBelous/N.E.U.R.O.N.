@@ -1,7 +1,7 @@
 #!/bin/python3
 from statistics import stdev
 
-from scapy.all import sniff, hexdump, rdpcap, ls
+from scapy.all import sniff, rdpcap, wrpcap
 
 
 class Sniffer:
@@ -11,6 +11,7 @@ class Sniffer:
         self.filter = "ip and tcp"
         self.num_packets_to_sniff = 10
         self.last_time = None
+        self.count = 0
 
     def set_default(self):
         self.packets_list = list()
@@ -18,6 +19,11 @@ class Sniffer:
 
     def sniffing_packets(self, packet):
         self.packets_list.append(packet)
+        self.count += 1
+        if not self.count % 100:
+            print(self.count)
+        if not self.count % 1000:
+            wrpcap(f'my_{self.count}.pcap', self.packets_list)
 
     def analyze_packets(self, packets):
         total_length = 0
@@ -73,6 +79,10 @@ class Sniffer:
         for pkt in packets[:10]:
             pkt.show()
 
+    def create_pcap(self):
+        sniff(prn=self.sniffing_packets, filter=self.filter, count=50000)
+        wrpcap(f'my50000.pcap', self.packets_list)
+
     def print(self):
         for packet in self.packets_list:
             print(len(packet))
@@ -85,6 +95,7 @@ if __name__ == '__main__':
     # sn.start_sniffing()
     # sn.analyze_packets(sn.packets_list)
     # sn.set_default()
-    sn.read_pcap('/media/nemo/disk_2_hdd/Projects/Pycharm/NetworkNNAnalyser/filtered_at_vi_1520_1530.pcapng')
-    sn.analyze_packets(sn.packets_list)
-    sn.set_default()
+    # sn.read_pcap('/media/nemo/disk_2_hdd/Projects/Pycharm/NetworkNNAnalyser/my.pcap')
+    # sn.analyze_packets(sn.packets_list)
+    # sn.set_default()
+    sn.create_pcap()
