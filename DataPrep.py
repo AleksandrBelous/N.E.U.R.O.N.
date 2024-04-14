@@ -16,6 +16,8 @@ class DataPrep:
         self.row_data = list()
         self.pcap_to_read = ''
         self.is_norm_sample = ''
+        self.X = None
+        self.detected = None
 
     def set_default(self):
         """
@@ -125,6 +127,25 @@ class DataPrep:
         """
         sniff(prn=self.sniffing_packets, filter=self.filter, count=self.num_pkts_to_sniff)
 
+    def store_X(self):
+        with open('Xy.txt', 'w') as f:
+            f.write(','.join([str(e) for e in self.X] + ['0']))
+
+    def train_mode(self, is_v=False):
+        self.start_sniffing()
+        if is_v: print(f'sniffed {self.num_pkts_to_sniff} packets')
+        self.X = self.analyze_10_packets(self.pkts_list)
+        self.store_X()
+        if is_v: print('stored as dataset')
+
+    def store_detected(self):
+        with open('detected.txt', 'w') as f:
+            f.write(','.join([str(e) for e in self.detected]))
+    def detecting_mode(self):
+        self.start_sniffing()
+        self.detected = self.analyze_10_packets(self.pkts_list)
+        self.store_detected()
+
     def read_pcap(self):
         """
         put the .pcap file at 'pkts_list' attribute
@@ -175,4 +196,5 @@ class DataPrep:
 
 
 if __name__ == '__main__':
-    ...
+    dp = DataPrep()
+    dp.set_samples('my_pcaps', 0)
