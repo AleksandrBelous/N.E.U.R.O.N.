@@ -11,7 +11,7 @@ if __name__ == '__main__':
         mm = input('    1 - Sniffing in detection mode\n'
                    '    2 - Sniffing for training in normal mode\n'
                    '    3 - Sniffing for training in attack mode\n'
-                   '    4 - Catch ans save local traffic\n'
+                   '    4 - Catch and save local traffic\n'
                    '>>> '
                    )
         if mm == '1':
@@ -45,13 +45,13 @@ if __name__ == '__main__':
         if mm == '1':
             nn = NN.NN()
             nn.model_name = model_name
-            nn.epochs = 10
+            nn.epochs = 3
             nn.batch_size = 32
             nn.start_pre_train()
         if mm == '2':
             nn = NN.NN()
             nn.model_name = model_name
-            nn.epochs = 10
+            nn.epochs = 3
             nn.batch_size = 32
             while True:
                 X, y = nn.get_single_dataset('Xy.txt')
@@ -60,7 +60,7 @@ if __name__ == '__main__':
             nn = NN.NN()
             nn.model_name = model_name
             nn.load_model()
-            nn.epochs = 10
+            nn.epochs = 3
             nn.batch_size = 32
             while True:
                 single = nn.get_detected('detected.txt')
