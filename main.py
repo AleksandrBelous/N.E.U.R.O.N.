@@ -16,14 +16,14 @@ if __name__ == '__main__':
                    )
         if mm == '1':
             sn = DataPrep.DataPrep()
-            sn.num_pkts_to_sniff = 10
+            sn.num_pkts_to_sniff = int(input('>>> number packets to catch: '))
             is_v = input('verbose mode? [y/N]')
             is_v = True if is_v == 'y' else False
             while True:
                 sn.detecting_mode(is_v)
         if mm == '2' or mm == '3':
             sn_nn = DataPrep.DataPrep()
-            sn_nn.num_pkts_to_sniff = 100
+            sn_nn.num_pkts_to_sniff = int(input('>>> number packets to catch: '))
             is_v = input('verbose mode? [y/N]')
             is_v = True if is_v == 'y' else False
             while True:
