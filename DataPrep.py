@@ -141,10 +141,12 @@ class DataPrep:
     def store_detected(self):
         with open('detected.txt', 'w') as f:
             f.write(','.join([str(e) for e in self.detected]))
-    def detecting_mode(self):
+    def detecting_mode(self, is_v=False):
         self.start_sniffing()
+        if is_v: print(f'sniffed {self.num_pkts_to_sniff} packets')
         self.detected = self.analyze_10_packets(self.pkts_list)
         self.store_detected()
+        if is_v: print('stored')
 
     def read_pcap(self):
         """
