@@ -7,7 +7,7 @@ def get_help():
 
 def main():
     arguments_lst = sys.argv[1:]
-    options = "hmo:"
+    options = "hmuo:"
     long_options = ["help", "My_file", "Output="]
     try:
         args, vals = getopt.getopt(arguments_lst, options, long_options)
