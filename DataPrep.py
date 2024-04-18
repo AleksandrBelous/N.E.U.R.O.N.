@@ -1,4 +1,3 @@
-#!/bin/python3
 import os
 from statistics import stdev
 
@@ -8,14 +7,14 @@ from scapy.all import sniff, rdpcap, wrpcap
 class DataPrep:
 
     def __init__(self):
-        self.pkts_list = list()
-        self.filter = "ip and tcp"
-        self.num_pkts_to_sniff = 10
+        self.sniffed_pkts_list = list()
+        self.filter = None  # "ip and tcp"
+        self.num_pkts_to_sniff = None  # 10
         self.last_time = None
-        self.count = 0
+        self.count = None  # 0
         self.row_data = list()
-        self.pcap_to_read = ''
-        self.is_norm_sample = ''
+        self.pcap_to_read = None  # ''
+        self.is_norm_sample = None  # ''
         self.X = None
         self.detected = None
 
@@ -24,7 +23,7 @@ class DataPrep:
         set attributes to default values
         :return: None
         """
-        self.pkts_list = list()
+        self.sniffed_pkts_list = list()
         self.last_time = None
         self.row_data = list()
         self.pcap_to_read = ''
@@ -33,9 +32,9 @@ class DataPrep:
         """
         help function for packets sniffing
         :param pkt: yet sniffed packet
-        :return: None, put sniffed packets at 'pkts_list' attribute
+        :return: None, put sniffed packets at 'sniffed_pkts_list' attribute
         """
-        self.pkts_list.append(pkt)
+        self.sniffed_pkts_list.append(pkt)
 
     def analyze_10_packets(self, pkts):
         """
@@ -123,7 +122,7 @@ class DataPrep:
     def start_sniffing(self):
         """
         start sniffing with given params
-        :return: None, put sniffed packets at 'pkts_list' attribute
+        :return: None, put sniffed packets at 'sniffed_pkts_list' attribute
         """
         sniff(prn=self.sniffing_packets, filter=self.filter, count=self.num_pkts_to_sniff)
 
@@ -134,26 +133,27 @@ class DataPrep:
     def train_mode(self, is_v=False):
         self.start_sniffing()
         if is_v: print(f'sniffed {self.num_pkts_to_sniff} packets')
-        self.X = self.analyze_10_packets(self.pkts_list)
+        self.X = self.analyze_10_packets(self.sniffed_pkts_list)
         self.store_X()
         if is_v: print('stored as dataset')
 
     def store_detected(self):
         with open('detected.txt', 'w') as f:
             f.write(','.join([str(e) for e in self.detected]))
+
     def detecting_mode(self, is_v=False):
         self.start_sniffing()
         if is_v: print(f'sniffed {self.num_pkts_to_sniff} packets')
-        self.detected = self.analyze_10_packets(self.pkts_list)
+        self.detected = self.analyze_10_packets(self.sniffed_pkts_list)
         self.store_detected()
         if is_v: print('stored')
 
     def read_pcap(self):
         """
-        put the .pcap file at 'pkts_list' attribute
-        :return: None, put the .pcap file at 'pkts_list' attribute
+        put the .pcap file at 'sniffed_pkts_list' attribute
+        :return: None, put the .pcap file at 'sniffed_pkts_list' attribute
         """
-        self.pkts_list = rdpcap(self.pcap_to_read)
+        self.sniffed_pkts_list = rdpcap(self.pcap_to_read)
 
     def create_pcap_from_net(self, num_packets_to_create):
         """
@@ -162,7 +162,7 @@ class DataPrep:
         :return: None, create 'my{num_packets_to_create}.pcap' file at local folder
         """
         sniff(prn=self.sniffing_packets, filter=self.filter, count=num_packets_to_create)
-        wrpcap(f'my{num_packets_to_create}.pcap', self.pkts_list)
+        wrpcap(f'my{num_packets_to_create}.pcap', self.sniffed_pkts_list)
 
     def create_csv(self):
         """
@@ -192,11 +192,20 @@ class DataPrep:
         for file in os.listdir(attacks_pcaps_folder):
             self.pcap_to_read = os.path.join(attacks_pcaps_folder, file)
             self.read_pcap()
-            self.analyze_pcap(self.pkts_list)
+            self.analyze_pcap(self.sniffed_pkts_list)
             self.create_csv()
             self.set_default()
+
+
+class SnifferTransmitter(DataPrep):
+    ...
+
+
+class SnifferTeacher(DataPrep):
+    ...
 
 
 if __name__ == '__main__':
     dp = DataPrep()
     dp.set_samples('my_pcaps', 0)
+    sc = SnifferTransmitter()
