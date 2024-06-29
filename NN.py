@@ -84,7 +84,7 @@ class NN:
     def update_model(self, X, y, epochs=10, batch_size=32):
         """
         update the pretrained model ('loaded_model' attribute) in real time
-        :param X: list of network characteristics, shape=(N, 10) for N sniffed packets
+        :param X: list of network characteristics, shape=(N, 10) for N sniffed _packets
         :param y: labels
         :param epochs: number of epochs
         :param batch_size: size of bathes
