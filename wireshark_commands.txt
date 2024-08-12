@@ -1,2 +1,2 @@
-(frame.time >= "Jul 03, 2017 16:40:00") && (frame.time <= "Jul 03, 2017 16:42:00") and tcp and ip and (ip.src==192.168.10.50 and ip.dst==172.16.0.1 or ip.dst==192.168.10.50 and ip.src==172.16.0.1)
+(frame.time >= "Jul 03|6, 2017 16:40:00") && (frame.time <= "Jul 03|6, 2017 16:42:00") and tcp and ip and (ip.src==192.168.10.50 and ip.dst==172.16.0.1 or ip.dst==192.168.10.50 and ip.src==172.16.0.1)
 tcp and ip and ip.addr==192.168.10.50
