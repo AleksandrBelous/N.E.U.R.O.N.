@@ -1,3 +1,0 @@
-Average Packet Size,Flow Bytes/s,Fwd Packet Length Mean,Max Packet Length,Fwd IAT Min,Total Length of Fwd Packets,Flow IAT Mean,Fwd IAT Std,Fwd Packet Length Max,Fwd Header Length,Label
-228.814,519.56,4215,214.814,0.0,30074,2.63174,0.44357,4201,7392,1
-209.371,594.828,2767,195.2,0.0,27328,1.4313,0.35452,2753,7268,1
