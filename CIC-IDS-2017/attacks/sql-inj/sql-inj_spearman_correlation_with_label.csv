@@ -1,0 +1,5 @@
+Packet Interval,Average Packet Size,Flow Bytes/s,Flow IAT Mean,Fwd Header Length,Fwd IAT Min,Fwd IAT Std,Fwd Packet Length Max,Fwd Packet Length Mean,Max Packet Length,Total Length of Fwd Packets,High Correlation Count
+10,0.068,0.09,0.076,0.221,0.172,0.096,0.109,0.109,0.071,0.071,0
+50,0.026,0.191,0.035,0.395,0.053,0.122,0.247,0.247,0.035,0.035,0
+100,0.342,0.342,0.266,0.305,0.089,0.342,0.393,0.393,0.342,0.342,0
+250,0.258,0.775,0.775,0.775,,0.775,0.816,0.816,0.258,0.258,6
