@@ -5,3 +5,4 @@ test.ipynb
 wireshark_commands.txt
 /.idea/
 CIC-IDS-2017/multiclass_Q/machine_models
+*.pcap
