@@ -6,3 +6,4 @@ wireshark_commands.txt
 /.idea/
 *.pcap
 *.pkl
+/Attack Simulation Lab Dataset/attack-simulation-alert.csv
