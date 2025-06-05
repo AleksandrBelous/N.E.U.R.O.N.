@@ -1,0 +1,6 @@
+LatentDim,Attack Category,Interval,AUROC,Accuracy,Precision,Recall,F1 Score,True Negative,False Positive,False Negative,True Positive,ROC AUC
+100,xss,1000,1.0,1.0,1.0,1.0,1.0,5,0,0,14,1.0
+200,xss,1000,1.0,1.0,1.0,1.0,1.0,5,0,0,14,1.0
+300,xss,1000,1.0,1.0,1.0,1.0,1.0,5,0,0,14,1.0
+400,xss,1000,1.0,1.0,1.0,1.0,1.0,5,0,0,14,1.0
+500,xss,1000,1.0,1.0,1.0,1.0,1.0,5,0,0,14,1.0
