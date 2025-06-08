@@ -1,0 +1,10 @@
+Model,File,Packet Size,Adjusted Rand Index,Adjusted Mutual Information,Silhouette Score,Homogeneity,Completeness,V-Measure
+Agglomerative Clustering,combined_10_packets.csv,10,0.259,0.323,0.517,0.280,0.383,0.323
+Agglomerative Clustering,combined_50_packets.csv,50,0.348,0.394,0.423,0.374,0.418,0.395
+Agglomerative Clustering,combined_100_packets.csv,100,0.327,0.389,0.395,0.389,0.392,0.391
+Agglomerative Clustering,combined_250_packets.csv,250,0.341,0.447,0.397,0.422,0.481,0.449
+Agglomerative Clustering,combined_500_packets.csv,500,0.325,0.447,0.344,0.440,0.463,0.451
+Agglomerative Clustering,combined_750_packets.csv,750,0.341,0.432,0.341,0.409,0.471,0.438
+Agglomerative Clustering,combined_1000_packets.csv,1000,0.201,0.386,0.330,0.363,0.432,0.395
+Agglomerative Clustering,combined_5000_packets.csv,5000,0.401,0.503,0.431,0.486,0.586,0.531
+Agglomerative Clustering,combined_10000_packets.csv,10000,0.460,0.565,0.447,0.556,0.661,0.604
