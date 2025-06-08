@@ -6,6 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/.vscode" />
       <excludeFolder url="file://$MODULE_DIR$/CIC-IDS-2017/multiclass_Q/machine_models" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/.sourcegraph" />
     </content>
     <orderEntry type="jdk" jdkName="ml" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
