@@ -7,3 +7,4 @@ wireshark_commands.txt
 *.pcap
 *.pkl
 /Attack Simulation Lab Dataset/attack-simulation-alert.csv
+/ARCADE/n_packets=2_l=100/inf-dropbox/inf-dropbox_attack.csv
