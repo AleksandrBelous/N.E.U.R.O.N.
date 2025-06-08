@@ -1,0 +1,2002 @@
+<admd:annotation xmlns:admd="http://www.nict.go.jp/admd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.nict.go.jp/admd admd.xsd">
+    <algorithm version="Graph-based combination of traffic classifier using SCANN" name="0.0.1">
+        <description>
+      Based on R.Fontugne et al. COST-TMA 2010
+    </description>
+        <url>
+      http://www.fukuda-lab.org/~romain
+    </url>
+    </algorithm>
+    <analysis>
+        <description>MAWILab</description>
+        <analyst>
+      
+    </analyst>
+        <organization>
+      
+    </organization>
+    </analysis>
+    <dataset>
+        <description>
+      MAWI
+    </description>
+        <url>
+      http://tracer.csl.sony.co.jp/mawi/
+    </url>
+    </dataset>
+    <anomaly type="suspicious" value="1.20471,1.40798,010,0 0 0 1 0 0 1 0 0 1 0 0,mptmp">
+        <slice>
+            <filter src_ip="89.199.109.252"/>
+            <filter src_ip="1.181.171.40" src_port="52612" dst_port="2375"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.09272,1.3788,504,1 1 0 1 0 0 0 0 0 1 0 0,ptmp">
+        <slice>
+            <filter src_ip="202.247.171.172" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.28576,1.51076,052,1 1 0 1 1 0 0 0 0 0 0 0,heavy_hitter">
+        <slice>
+            <filter src_ip="122.223.204.7" dst_ip="202.254.226.113" dst_port="22"/>
+            <filter src_ip="122.223.204.7" dst_ip="202.254.226.113" dst_port="8728"/>
+            <filter src_ip="122.223.204.7" dst_ip="202.254.226.113" dst_port="8291"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628313228"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.28576,1.51076,010,1 1 0 1 1 0 0 0 0 0 0 0,mptmp">
+        <slice>
+            <filter dst_ip="92.59.213.72" dst_port="44944"/>
+            <filter dst_ip="103.97.109.203" src_port="50802" dst_port="45212"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628313126"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN139445">
+        <slice>
+            <filter src_ip="101.80.146.254" dst_port="445"/>
+        </slice>
+        <from usec="0" sec="1628312802"/>
+        <to usec="0" sec="1628312803"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ptmp">
+        <slice>
+            <filter src_ip="36.238.23.158" dst_port="1433"/>
+        </slice>
+        <from usec="0" sec="1628313212"/>
+        <to usec="0" sec="1628313216"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.00114,1.38237,010,1 1 0 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="193.102.77.97" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313090"/>
+        <to usec="0" sec="1628313101"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="119.112.83.229" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313103"/>
+        <to usec="0" sec="1628313116"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.00114,1.38237,010,1 1 0 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="111.29.137.131" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313093"/>
+        <to usec="0" sec="1628313104"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="186.91.75.145" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313086"/>
+        <to usec="0" sec="1628313097"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="118.172.109.138" dst_port="1433"/>
+        </slice>
+        <from usec="0" sec="1628312596"/>
+        <to usec="0" sec="1628312597"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.00114,1.38237,010,1 1 0 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="125.116.101.11" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313092"/>
+        <to usec="0" sec="1628313095"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.00114,1.38237,010,1 1 0 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="107.99.8.25" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313092"/>
+        <to usec="0" sec="1628313104"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.00114,1.38237,010,1 1 0 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="191.211.11.254" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313080"/>
+        <to usec="0" sec="1628313084"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="178.35.30.254" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313080"/>
+        <to usec="0" sec="1628313090"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.00114,1.38237,010,1 1 0 0 0 0 0 0 0 0 0 0,ntscSYN139445">
+        <slice>
+            <filter src_ip="117.77.82.162" dst_port="445"/>
+        </slice>
+        <from usec="0" sec="1628312526"/>
+        <to usec="0" sec="1628312529"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="218.231.86.201" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313093"/>
+        <to usec="0" sec="1628313107"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="220.134.78.73" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313092"/>
+        <to usec="0" sec="1628313105"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.00114,1.38237,010,1 1 0 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="199.153.221.77" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313060"/>
+        <to usec="0" sec="1628313064"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="59.201.232.67" dst_port="1433"/>
+        </slice>
+        <from usec="0" sec="1628312487"/>
+        <to usec="0" sec="1628312488"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.00114,1.38237,010,1 1 0 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="79.251.45.64" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313093"/>
+        <to usec="0" sec="1628313104"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="223.175.166.70" dst_port="1433"/>
+        </slice>
+        <from usec="0" sec="1628312421"/>
+        <to usec="0" sec="1628312423"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="73.59.219.253" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313096"/>
+        <to usec="0" sec="1628313109"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN139445">
+        <slice>
+            <filter src_ip="5.50.226.23" dst_port="445"/>
+        </slice>
+        <from usec="0" sec="1628313153"/>
+        <to usec="0" sec="1628313156"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.00114,1.38237,010,1 1 0 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="112.71.219.200" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313093"/>
+        <to usec="0" sec="1628313104"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN139445">
+        <slice>
+            <filter src_ip="122.213.77.174" dst_port="445"/>
+        </slice>
+        <from usec="0" sec="1628313195"/>
+        <to usec="0" sec="1628313196"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="103.249.133.150" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313096"/>
+        <to usec="0" sec="1628313107"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.00114,1.38237,010,1 1 0 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="109.105.154.237" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313085"/>
+        <to usec="0" sec="1628313096"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="175.125.11.196" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313090"/>
+        <to usec="0" sec="1628313094"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.00114,1.38237,010,1 1 0 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="117.214.69.194" dst_port="1433"/>
+        </slice>
+        <from usec="0" sec="1628312674"/>
+        <to usec="0" sec="1628312675"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="173.159.152.86" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313100"/>
+        <to usec="0" sec="1628313113"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.00114,1.38237,010,1 1 0 0 0 0 0 0 0 0 0 0,sntscSYN">
+        <slice>
+            <filter src_ip="193.218.148.137" dst_port="445"/>
+        </slice>
+        <from usec="0" sec="1628312713"/>
+        <to usec="0" sec="1628312716"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="124.179.53.147" dst_port="1433"/>
+        </slice>
+        <from usec="0" sec="1628312688"/>
+        <to usec="0" sec="1628312690"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="161.7.27.177" dst_port="8291"/>
+            <filter src_ip="161.7.27.177" dst_port="22"/>
+            <filter src_ip="161.7.27.177" dst_port="8728"/>
+        </slice>
+        <from usec="0" sec="1628313063"/>
+        <to usec="0" sec="1628313297"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="218.150.213.136" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313091"/>
+        <to usec="0" sec="1628313117"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="185.118.212.153" dst_port="1433"/>
+        </slice>
+        <from usec="0" sec="1628312967"/>
+        <to usec="0" sec="1628312969"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="170.85.10.176" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313059"/>
+        <to usec="0" sec="1628313073"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="66.76.56.140" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313091"/>
+        <to usec="0" sec="1628313104"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="222.100.71.151" dst_port="1433"/>
+        </slice>
+        <from usec="0" sec="1628313294"/>
+        <to usec="0" sec="1628313296"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="117.29.180.142" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313090"/>
+        <to usec="0" sec="1628313101"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="190.159.46.188" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313080"/>
+        <to usec="0" sec="1628313091"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="112.182.176.242" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313093"/>
+        <to usec="0" sec="1628313106"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="84.53.224.213" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313090"/>
+        <to usec="0" sec="1628313101"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="221.213.176.213" dst_port="1433"/>
+        </slice>
+        <from usec="0" sec="1628312420"/>
+        <to usec="0" sec="1628312424"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="31.160.143.15" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313087"/>
+        <to usec="0" sec="1628313098"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.40186,1.50456,010,1 1 1 0 0 0 0 0 0 1 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="59.181.153.215" dst_port="6379"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="210.229.215.44" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313097"/>
+        <to usec="0" sec="1628313107"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="82.90.75.21" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313093"/>
+        <to usec="0" sec="1628313103"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.19624,1.49182,010,1 1 1 1 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="201.223.26.34" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313089"/>
+        <to usec="0" sec="1628313103"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.19624,1.49182,010,1 1 1 1 0 0 0 0 0 0 0 0,sntscSYN">
+        <slice>
+            <filter src_ip="171.24.246.235" dst_port="1433"/>
+        </slice>
+        <from usec="0" sec="1628312534"/>
+        <to usec="0" sec="1628312848"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.00114,1.38237,010,1 1 0 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="60.241.195.24" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313068"/>
+        <to usec="0" sec="1628313069"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,sntscSYN">
+        <slice>
+            <filter src_ip="112.122.18.241" dst_port="445"/>
+        </slice>
+        <from usec="0" sec="1628312935"/>
+        <to usec="0" sec="1628312937"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,999,1 1 1 0 0 0 0 0 0 0 0 0,ntscUDPOther">
+        <slice>
+            <filter src_ip="185.38.194.240" dst_port="5351"/>
+        </slice>
+        <from usec="0" sec="1628312785"/>
+        <to usec="0" sec="1628312786"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="119.66.173.9" dst_port="1433"/>
+        </slice>
+        <from usec="0" sec="1628312688"/>
+        <to usec="0" sec="1628312692"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="111.234.225.8" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313081"/>
+        <to usec="0" sec="1628313092"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,mptp">
+        <slice>
+            <filter dst_ip="116.11.163.166" src_port="1433"/>
+        </slice>
+        <from usec="0" sec="1628312733"/>
+        <to usec="0" sec="1628312734"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.19624,1.49182,999,1 1 1 1 0 0 0 0 0 0 0 0,ptmp">
+        <slice>
+            <filter src_ip="202.247.171.54" dst_ip="52.190.230.253"/>
+            <filter src_ip="202.247.171.54" dst_port="3478"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628313228"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN139445">
+        <slice>
+            <filter src_ip="91.98.132.17" dst_port="1433"/>
+            <filter src_ip="91.98.132.17" dst_port="445"/>
+        </slice>
+        <from usec="0" sec="1628312778"/>
+        <to usec="0" sec="1628312784"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="117.29.182.116" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313093"/>
+        <to usec="0" sec="1628313104"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="134.157.202.191" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313092"/>
+        <to usec="0" sec="1628313102"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ptmp">
+        <slice>
+            <filter src_ip="116.11.163.166" dst_port="1433"/>
+        </slice>
+        <from usec="0" sec="1628312732"/>
+        <to usec="0" sec="1628312734"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="211.84.204.90" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313088"/>
+        <to usec="0" sec="1628313101"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN139445">
+        <slice>
+            <filter src_ip="50.43.79.197" dst_port="1433"/>
+            <filter src_ip="50.43.79.197" dst_port="445"/>
+        </slice>
+        <from usec="0" sec="1628312988"/>
+        <to usec="0" sec="1628312994"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN139445">
+        <slice>
+            <filter src_ip="219.133.181.138" dst_port="445"/>
+            <filter src_ip="219.133.181.138" dst_port="1433"/>
+        </slice>
+        <from usec="0" sec="1628312616"/>
+        <to usec="0" sec="1628312620"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="1.53.88.13" dst_port="1433"/>
+        </slice>
+        <from usec="0" sec="1628313242"/>
+        <to usec="0" sec="1628313243"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="177.94.74.229" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313087"/>
+        <to usec="0" sec="1628313098"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="24.153.232.42" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313095"/>
+        <to usec="0" sec="1628313106"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="81.9.152.158" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313098"/>
+        <to usec="0" sec="1628313109"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN139445">
+        <slice>
+            <filter src_ip="218.127.198.120" dst_port="445"/>
+        </slice>
+        <from usec="0" sec="1628312959"/>
+        <to usec="0" sec="1628312962"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="59.203.154.98" dst_port="1433"/>
+        </slice>
+        <from usec="0" sec="1628312893"/>
+        <to usec="0" sec="1628312894"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,sntscSYN">
+        <slice>
+            <filter src_ip="164.187.251.89" dst_port="445"/>
+        </slice>
+        <from usec="0" sec="1628313265"/>
+        <to usec="0" sec="1628313268"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN139445">
+        <slice>
+            <filter src_ip="117.74.170.202" dst_port="445"/>
+        </slice>
+        <from usec="0" sec="1628312586"/>
+        <to usec="0" sec="1628312590"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="1.45.218.60" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313090"/>
+        <to usec="0" sec="1628313103"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="211.82.40.250" dst_port="5555"/>
+        </slice>
+        <from usec="0" sec="1628313074"/>
+        <to usec="0" sec="1628313084"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,999,1 1 1 0 0 0 0 0 0 0 0 0,ntscUDPOther">
+        <slice>
+            <filter src_ip="185.38.194.241" dst_port="5351"/>
+        </slice>
+        <from usec="0" sec="1628312465"/>
+        <to usec="0" sec="1628313075"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,999,1 1 1 0 0 0 0 0 0 0 0 0,ntscUDPOther">
+        <slice>
+            <filter src_ip="185.38.194.244" dst_port="5351"/>
+        </slice>
+        <from usec="0" sec="1628313248"/>
+        <to usec="0" sec="1628313249"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,mptp">
+        <slice>
+            <filter dst_ip="104.124.167.4" src_port="22211"/>
+        </slice>
+        <from usec="0" sec="1628312837"/>
+        <to usec="0" sec="1628312844"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.1223,1.41149,010,0 0 0 0 0 0 1 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="165.20.215.85" src_port="52528" dst_port="8522"/>
+        </slice>
+        <from usec="0" sec="1628312760"/>
+        <to usec="0" sec="1628312806"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.87874,1.31032,010,1 0 0 1 0 0 0 0 0 1 0 0,ptmp">
+        <slice>
+            <filter src_ip="74.175.15.149"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.40186,1.50456,010,1 1 1 0 0 0 0 0 0 1 0 0,mptmp">
+        <slice>
+            <filter dst_ip="163.170.94.151"/>
+            <filter src_ip="39.174.245.121" src_port="21" dst_port="21"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.09272,1.3788,010,1 1 0 1 0 0 0 0 0 1 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="103.58.136.198" dst_port="22"/>
+            <filter src_ip="103.58.136.198" dst_port="8728"/>
+            <filter src_ip="103.58.136.198" dst_port="8291"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,999,1 1 1 0 0 0 0 0 0 0 0 0,ptmp">
+        <slice>
+            <filter src_ip="107.77.24.155" dst_port="15745"/>
+        </slice>
+        <from usec="0" sec="1628312608"/>
+        <to usec="0" sec="1628312618"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.19624,1.49182,010,1 1 1 1 0 0 0 0 0 0 0 0,mptmp">
+        <slice>
+            <filter dst_ip="107.77.24.155" src_port="15745"/>
+            <filter dst_ip="89.199.109.250" src_port="28492"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628313048"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.50104,1.61894,502,1 1 1 1 1 0 0 0 0 0 0 0,mptmp">
+        <slice>
+            <filter src_ip="45.117.76.1" dst_ip="203.93.165.227"/>
+            <filter src_ip="45.117.76.1" dst_ip="203.93.165.246"/>
+            <filter src_ip="45.117.76.1" dst_port="22"/>
+            <filter dst_ip="203.93.165.227" dst_port="22"/>
+            <filter dst_ip="203.93.165.246" dst_port="22"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628312958"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.61743,1.62331,010,1 1 1 1 1 0 0 0 0 1 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="47.103.15.225" dst_port="6379"/>
+            <filter src_ip="45.198.67.25" src_port="56939" dst_port="22"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,999,0 0 0 1 1 0 0 0 0 0 0 0,ntscUDPUDPrp">
+        <slice>
+            <filter dst_ip="163.170.212.27" src_port="53"/>
+            <filter dst_ip="163.170.213.97" src_port="53"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628313134"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.87874,1.31032,504,1 0 0 1 0 0 0 0 0 1 0 0,mptmp">
+        <slice>
+            <filter src_ip="203.93.174.164" dst_port="443"/>
+            <filter dst_ip="54.167.24.215" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,020,0 0 0 1 1 0 0 0 0 0 0 0,ntscICecrqICecrprp">
+        <slice>
+            <filter dst_ip="59.223.53.16"/>
+        </slice>
+        <from usec="0" sec="1628312403"/>
+        <to usec="0" sec="1628313133"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="106.241.4.28" dst_port="6379"/>
+        </slice>
+        <from usec="0" sec="1628312982"/>
+        <to usec="0" sec="1628312991"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.14226,1.42544,010,0 0 0 1 1 0 0 0 0 1 0 0,mptmp">
+        <slice>
+            <filter dst_ip="74.175.15.166"/>
+            <filter dst_ip="104.29.248.73" src_port="3306"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.14226,1.42544,020,0 0 0 1 1 0 0 0 0 1 0 0,ttl_error">
+        <slice>
+            <filter src_ip="202.254.241.155"/>
+            <filter src_ip="203.93.163.55"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.09272,1.3788,999,1 1 0 1 0 0 0 0 0 1 0 0,mptp">
+        <slice>
+            <filter dst_ip="94.175.105.172"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,999,1 1 1 0 0 0 0 0 0 0 0 0,ntscUDPOther">
+        <slice>
+            <filter src_ip="91.147.243.218" dst_port="1900"/>
+        </slice>
+        <from usec="0" sec="1628312429"/>
+        <to usec="0" sec="1628313172"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,sntscSYN">
+        <slice>
+            <filter src_ip="8.124.30.47" dst_port="6379"/>
+            <filter src_ip="220.252.141.214" dst_port="6379"/>
+        </slice>
+        <from usec="0" sec="1628312421"/>
+        <to usec="0" sec="1628312991"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,sntscSYN">
+        <slice>
+            <filter src_ip="185.163.56.217" dst_port="1433"/>
+        </slice>
+        <from usec="0" sec="1628312548"/>
+        <to usec="0" sec="1628313174"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN139445">
+        <slice>
+            <filter src_ip="117.71.71.119" dst_port="445"/>
+        </slice>
+        <from usec="0" sec="1628312842"/>
+        <to usec="0" sec="1628312845"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="182.203.135.67" dst_port="1433"/>
+        </slice>
+        <from usec="0" sec="1628312514"/>
+        <to usec="0" sec="1628312516"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,999,1 1 1 0 0 0 0 0 0 0 0 0,ntscUDPOther">
+        <slice>
+            <filter src_ip="185.20.64.122" dst_port="1900"/>
+        </slice>
+        <from usec="0" sec="1628312519"/>
+        <to usec="0" sec="1628313185"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.66451,1.70606,504,0 0 0 1 0 0 1 1 0 0 0 0,mptpla">
+        <slice>
+            <filter src_ip="17.10.153.250" dst_ip="203.93.174.3" src_port="443"/>
+            <filter src_ip="17.92.47.0" dst_ip="203.93.174.3" src_port="443"/>
+        </slice>
+        <from usec="0" sec="1628312403"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.28576,1.51076,502,1 1 0 1 1 0 0 0 0 0 0 0,mptmp">
+        <slice>
+            <filter dst_ip="203.93.162.5"/>
+            <filter src_ip="221.165.186.104" dst_port="22"/>
+            <filter src_ip="221.165.186.136" dst_port="22"/>
+        </slice>
+        <from usec="0" sec="1628312402"/>
+        <to usec="0" sec="1628313094"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.66451,1.70606,011,0 0 0 1 0 0 1 1 0 0 0 0,ntscTCPRSTACKrp">
+        <slice>
+            <filter dst_ip="45.109.107.139" dst_port="43527"/>
+            <filter dst_ip="45.99.194.116" dst_port="8080"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,010,1 1 1 0 0 0 0 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="115.40.128.77" dst_port="1433"/>
+        </slice>
+        <from usec="0" sec="1628312967"/>
+        <to usec="0" sec="1628312968"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.66451,1.70606,503,0 0 0 1 0 0 1 1 0 0 0 0,mptpHTTP">
+        <slice>
+            <filter dst_ip="203.93.166.160" dst_port="80"/>
+        </slice>
+        <from usec="0" sec="1628312401"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,503,0 0 0 1 1 0 0 0 0 0 0 0,rflatDNS">
+        <slice>
+            <filter dst_ip="186.27.213.189" src_port="53" dst_port="80"/>
+            <filter dst_ip="71.177.31.130" src_port="53" dst_port="80"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628313228"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26579,1.49985,999,1 1 1 0 0 0 0 0 0 0 0 0,ntscUDPOther">
+        <slice>
+            <filter src_ip="185.38.194.245" dst_port="5351"/>
+        </slice>
+        <from usec="0" sec="1628312588"/>
+        <to usec="0" sec="1628312589"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,504,0 0 0 1 1 0 0 0 0 0 0 0,alphfl">
+        <slice>
+            <filter src_ip="31.13.55.143" dst_ip="163.170.125.209" src_port="443"/>
+        </slice>
+        <from usec="0" sec="1628312401"/>
+        <to usec="0" sec="1628312508"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.26411,1.43343,504,0 0 0 1 0 0 0 0 0 1 0 1,mptmp">
+        <slice>
+            <filter dst_ip="163.170.125.123" src_port="443"/>
+            <filter dst_ip="163.170.21.107" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.05498,1.4289,901,0 0 0 0 1 0 0 0 0 0 0 0,empty">
+        <slice>
+            <filter dst_ip="0.0.0.0"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628312778"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.05498,1.4289,901,0 0 0 0 1 0 0 0 0 0 0 0,empty">
+        <slice>
+            <filter src_ip="0.0.0.0"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628312778"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,010,0 0 0 1 1 0 0 0 0 0 0 0,ptmp">
+        <slice>
+            <filter src_ip="71.250.179.70"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628313048"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,004,0 0 0 1 1 0 0 0 0 0 0 0,ptmpla">
+        <slice>
+            <filter src_ip="36.82.65.133" dst_ip="202.22.205.178" dst_port="445"/>
+            <filter src_ip="36.82.65.133" dst_ip="202.22.205.183" dst_port="445"/>
+            <filter src_ip="36.82.65.133" dst_ip="202.22.205.182" dst_port="445"/>
+            <filter src_ip="36.82.65.133" dst_ip="202.22.205.180" dst_port="445"/>
+        </slice>
+        <from usec="0" sec="1628312403"/>
+        <to usec="0" sec="1628312866"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,504,0 0 0 1 1 0 0 0 0 0 0 0,mptpla">
+        <slice>
+            <filter src_ip="163.170.125.194" dst_ip="140.73.151.74" src_port="58407" dst_port="443"/>
+            <filter src_ip="163.170.13.170" dst_ip="140.73.151.74" src_port="64961" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="1628312408"/>
+        <to usec="0" sec="1628313048"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,999,0 0 0 1 1 0 0 0 0 0 0 0,salphfl">
+        <slice>
+            <filter src_ip="202.247.174.120" dst_ip="116.105.50.83" src_port="25"/>
+        </slice>
+        <from usec="0" sec="1628312441"/>
+        <to usec="0" sec="1628312868"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,011,0 0 0 1 1 0 0 0 0 0 0 0,point_to_point">
+        <slice>
+            <filter src_ip="202.22.200.242" dst_ip="107.108.244.46" src_port="30303"/>
+        </slice>
+        <from usec="0" sec="1628312456"/>
+        <to usec="0" sec="1628312798"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,010,0 0 0 1 1 0 0 0 0 0 0 0,sntscSYN">
+        <slice>
+            <filter src_ip="147.196.198.36" src_port="32767"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628312958"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,010,0 0 0 1 1 0 0 0 0 0 0 0,sntscSYN">
+        <slice>
+            <filter src_ip="139.108.83.49" dst_port="1433"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628313225"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,010,0 0 0 1 1 0 0 0 0 0 0 0,sntscSYN">
+        <slice>
+            <filter src_ip="222.106.161.57" src_port="42463" dst_port="6379"/>
+            <filter src_ip="222.106.161.57" src_port="42463" dst_port="6380"/>
+            <filter src_ip="222.106.161.57" src_port="42463" dst_port="6381"/>
+        </slice>
+        <from usec="0" sec="1628312402"/>
+        <to usec="0" sec="1628312956"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,010,0 0 0 1 1 0 0 0 0 0 0 0,sntscSYN">
+        <slice>
+            <filter src_ip="58.19.42.14" dst_port="1433"/>
+        </slice>
+        <from usec="0" sec="1628312402"/>
+        <to usec="0" sec="1628313209"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,504,0 0 0 1 1 0 0 0 0 0 0 0,mptpla">
+        <slice>
+            <filter src_ip="163.170.72.139" dst_ip="13.222.48.102" dst_port="443"/>
+            <filter src_ip="163.170.72.76" dst_ip="13.222.48.102" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="1628312408"/>
+        <to usec="0" sec="1628312949"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,504,0 0 0 1 1 0 0 0 0 0 0 0,alphfl">
+        <slice>
+            <filter src_ip="131.126.26.194" dst_ip="216.147.220.9" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628313048"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,010,0 0 0 1 1 0 0 0 0 0 0 0,poscaSYN">
+        <slice>
+            <filter src_ip="143.135.66.185" dst_ip="163.170.134.16" src_port="32766"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628313048"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,504,0 0 0 1 1 0 0 0 0 0 0 0,alphfl">
+        <slice>
+            <filter src_ip="163.170.9.82" dst_ip="174.87.186.152" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628313048"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,004,0 0 0 1 1 0 0 0 0 0 0 0,mptp">
+        <slice>
+            <filter dst_ip="202.22.205.59" dst_port="445"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628313228"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,010,0 0 0 1 1 0 0 0 0 0 0 0,mptmp">
+        <slice>
+            <filter src_ip="202.22.201.247"/>
+            <filter dst_ip="162.8.253.175"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628313130"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,052,0 0 0 1 1 0 0 0 0 0 0 0,mptmp">
+        <slice>
+            <filter src_ip="202.160.42.224" dst_ip="203.93.160.94"/>
+            <filter src_ip="202.160.42.224" dst_port="22"/>
+            <filter dst_ip="203.93.160.94" dst_port="22"/>
+        </slice>
+        <from usec="0" sec="1628312401"/>
+        <to usec="0" sec="1628313044"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,999,0 0 0 1 1 0 0 0 0 0 0 0,point_to_point">
+        <slice>
+            <filter src_ip="202.22.200.242" dst_ip="3.108.0.35" src_port="30303"/>
+        </slice>
+        <from usec="0" sec="1628312401"/>
+        <to usec="0" sec="1628313032"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,504,0 0 0 1 1 0 0 0 0 0 0 0,mptp">
+        <slice>
+            <filter dst_ip="163.170.72.143" src_port="443"/>
+        </slice>
+        <from usec="0" sec="1628312401"/>
+        <to usec="0" sec="1628313045"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.05498,1.4289,504,0 0 0 0 1 0 0 0 0 0 0 0,mptpla">
+        <slice>
+            <filter src_ip="163.170.131.51" dst_ip="64.132.251.171" dst_port="443"/>
+            <filter src_ip="163.170.130.180" dst_ip="64.132.251.171" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="1628312401"/>
+        <to usec="0" sec="1628313039"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,999,0 0 0 1 1 0 0 0 0 0 0 0,mptpla">
+        <slice>
+            <filter src_ip="202.247.169.117" dst_ip="138.133.155.118" src_port="53" dst_port="37502"/>
+            <filter src_ip="202.247.169.101" dst_ip="138.133.155.118" src_port="53" dst_port="37502"/>
+            <filter src_ip="203.93.167.172" dst_ip="138.133.155.118" src_port="53" dst_port="37502"/>
+        </slice>
+        <from usec="0" sec="1628312401"/>
+        <to usec="0" sec="1628313045"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,502,0 0 0 1 1 0 0 0 0 0 0 0,alphfl">
+        <slice>
+            <filter src_ip="179.80.11.171" dst_ip="203.93.174.120" dst_port="22"/>
+        </slice>
+        <from usec="0" sec="1628312402"/>
+        <to usec="0" sec="1628313045"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,999,0 0 0 1 1 0 0 0 0 0 0 0,salphfl">
+        <slice>
+            <filter src_ip="202.254.214.8" dst_ip="203.130.214.176" dst_port="53"/>
+        </slice>
+        <from usec="0" sec="1628312406"/>
+        <to usec="0" sec="1628313041"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,504,0 0 0 1 1 0 0 0 0 0 0 0,salphfl">
+        <slice>
+            <filter src_ip="163.170.130.159" dst_ip="164.215.239.145" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="1628312419"/>
+        <to usec="0" sec="1628313018"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,504,0 0 0 1 1 0 0 0 0 0 0 0,mptpla">
+        <slice>
+            <filter src_ip="163.170.13.97" dst_ip="52.184.93.131" dst_port="443"/>
+            <filter src_ip="202.247.171.54" dst_ip="52.184.93.131" dst_port="443"/>
+            <filter src_ip="163.170.124.89" dst_ip="52.184.93.131" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="1628312886"/>
+        <to usec="0" sec="1628313041"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,999,0 0 0 1 1 0 0 0 0 0 0 0,salphfl">
+        <slice>
+            <filter src_ip="202.254.214.8" dst_ip="203.130.214.181" dst_port="53"/>
+        </slice>
+        <from usec="0" sec="1628312407"/>
+        <to usec="0" sec="1628313228"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,504,0 0 0 1 1 0 0 0 0 0 0 0,mptpla">
+        <slice>
+            <filter src_ip="163.170.130.169" dst_ip="52.255.59.251" src_port="26262" dst_port="443"/>
+            <filter src_ip="163.170.130.169" dst_ip="52.255.59.251" src_port="16911" dst_port="443"/>
+            <filter src_ip="163.170.125.41" dst_ip="52.255.59.251" src_port="55148" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="1628312410"/>
+        <to usec="0" sec="1628313211"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.97777,2.03146,901,0 0 0 0 0 1 0 0 0 0 0 0,empty">
+        <slice>
+            <filter dst_ip="0.0.0.0"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628312778"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.97777,2.03146,901,0 0 0 0 0 1 0 0 0 0 0 0,empty">
+        <slice>
+            <filter src_ip="0.0.0.0"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628312778"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,504,0 0 0 1 1 0 0 0 0 0 0 0,mptmp">
+        <slice>
+            <filter dst_ip="163.170.51.249" src_port="443"/>
+            <filter dst_ip="163.170.95.41" src_port="443"/>
+        </slice>
+        <from usec="0" sec="1628312408"/>
+        <to usec="0" sec="1628313138"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.1223,1.41149,999,0 0 0 0 0 0 1 0 0 0 0 0,alphfl">
+        <slice>
+            <filter dst_ip="99.12.207.25"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628312446"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.04323,1.40295,010,0 0 0 1 0 0 1 0 0 0 0 0,ptmp">
+        <slice>
+            <filter src_ip="219.68.2.38" src_port="56093"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628313223"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.24463,1.43973,010,1 0 0 0 0 0 1 0 0 0 0 0,mptpHTTP">
+        <slice>
+            <filter dst_ip="103.140.126.85" src_port="80"/>
+        </slice>
+        <from usec="0" sec="1628312670"/>
+        <to usec="0" sec="1628313099"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.1223,1.41149,020,0 0 0 0 0 0 1 0 0 0 0 0,ntscUDPUDPICrp">
+        <slice>
+            <filter dst_ip="163.200.129.110"/>
+        </slice>
+        <from usec="0" sec="1628312670"/>
+        <to usec="0" sec="1628312716"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.1223,1.41149,999,0 0 0 0 0 0 1 0 0 0 0 0,mptp">
+        <slice>
+            <filter dst_ip="163.170.54.107"/>
+        </slice>
+        <from usec="0" sec="1628312850"/>
+        <to usec="0" sec="1628312896"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.24463,1.43973,504,1 0 0 0 0 0 1 0 0 0 0 0,alphfl">
+        <slice>
+            <filter src_ip="163.170.92.71" dst_ip="18.194.10.195" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="1628312694"/>
+        <to usec="0" sec="1628313106"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.1223,1.41149,010,0 0 0 0 0 0 1 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="59.181.206.115"/>
+        </slice>
+        <from usec="0" sec="1628313210"/>
+        <to usec="0" sec="1628313256"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.1223,1.41149,010,0 0 0 0 0 0 1 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="192.174.39.99"/>
+        </slice>
+        <from usec="0" sec="1628313210"/>
+        <to usec="0" sec="1628313256"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.1223,1.41149,010,0 0 0 0 0 0 1 0 0 0 0 0,ntscSYN">
+        <slice>
+            <filter src_ip="192.174.46.130" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="1628313210"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.1223,1.41149,999,0 0 0 0 0 0 1 0 0 0 0 0,mptpHTTP">
+        <slice>
+            <filter dst_ip="202.254.203.129" src_port="53"/>
+            <filter dst_ip="202.254.203.129" dst_port="53"/>
+        </slice>
+        <from usec="0" sec="1628313255"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.66451,1.70606,010,0 0 0 1 0 0 1 1 0 0 0 0,mptmp">
+        <slice>
+            <filter src_ip="203.93.165.229" src_port="22"/>
+            <filter dst_ip="49.88.140.60" src_port="22"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.66451,1.70606,020,0 0 0 1 0 0 1 1 0 0 0 0,ntscICecrqICecrqdurmterp">
+        <slice>
+            <filter dst_ip="203.93.160.142"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.1223,1.41149,999,0 0 0 0 0 0 1 0 0 0 0 0,mptp">
+        <slice>
+            <filter dst_ip="202.22.201.126"/>
+        </slice>
+        <from usec="0" sec="1628313255"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.1223,1.41149,010,0 0 0 0 0 0 1 0 0 0 0 0,mptp">
+        <slice>
+            <filter dst_ip="133.4.130.179"/>
+        </slice>
+        <from usec="0" sec="1628313255"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.87874,1.31032,504,1 0 0 1 0 0 0 0 0 1 0 0,ptmp">
+        <slice>
+            <filter src_ip="202.247.171.188" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.09724,1.33806,999,0 0 0 1 0 0 0 0 0 1 1 0,ptmp">
+        <slice>
+            <filter src_ip="203.93.170.236"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,504,0 0 0 1 1 0 0 0 0 0 0 0,mptmp">
+        <slice>
+            <filter src_ip="203.93.172.38" dst_ip="5.79.202.105"/>
+            <filter src_ip="203.93.172.38" src_port="3389"/>
+            <filter dst_ip="5.79.202.105" src_port="3389"/>
+            <filter src_ip="203.93.172.38" dst_ip="172.95.59.225" src_port="443"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628313046"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.16845,1.38748,999,1 1 0 0 0 0 0 0 0 1 0 0,malphfl">
+        <slice>
+            <filter src_ip="213.89.73.111" dst_ip="203.93.167.172" dst_port="53"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.971293,1.31946,999,1 0 0 0 0 0 0 0 0 1 0 0,ptmpla">
+        <slice>
+            <filter src_ip="3.109.235.2" dst_ip="163.170.227.11" dst_port="587"/>
+            <filter src_ip="3.109.235.2" dst_ip="163.170.227.110" dst_port="587"/>
+            <filter src_ip="3.109.235.2" dst_ip="163.170.227.10" dst_port="587"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.970443,1.42047,999,0 0 0 1 1 0 0 0 0 0 0 0,mptmp">
+        <slice>
+            <filter dst_ip="202.22.201.252"/>
+            <filter src_ip="103.140.126.85" dst_ip="202.22.200.144" dst_port="80"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628313042"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.42339,1.47846,504,0 0 0 1 1 0 0 0 0 1 1 0,mptp">
+        <slice>
+            <filter dst_ip="163.170.125.117" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.09724,1.33806,504,0 0 0 1 0 0 0 0 0 1 1 0,mptmp">
+        <slice>
+            <filter dst_ip="163.170.128.98" src_port="443"/>
+            <filter dst_ip="163.170.140.226" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.09724,1.33806,504,0 0 0 1 0 0 0 0 0 1 1 0,mptp">
+        <slice>
+            <filter dst_ip="203.93.174.164" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.16845,1.38748,503,1 1 0 0 0 0 0 0 0 1 0 0,ptmplaHTTP">
+        <slice>
+            <filter src_ip="133.19.188.119" dst_ip="8.0.207.62" dst_port="80"/>
+            <filter src_ip="133.19.188.119" dst_ip="8.0.220.193" dst_port="80"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.29024,1.37657,504,1 0 0 0 0 0 0 0 0 1 1 0,alphfl">
+        <slice>
+            <filter src_ip="163.170.124.248" dst_ip="163.170.21.29" src_port="443" dst_port="53528"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.17267,1.347,504,0 0 0 0 0 0 0 0 0 1 1 0,alphfl">
+        <slice>
+            <filter src_ip="13.222.48.4" dst_ip="163.170.124.56" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.17267,1.347,504,0 0 0 0 0 0 0 0 0 1 1 0,alphfl">
+        <slice>
+            <filter src_ip="38.5.126.159" dst_ip="163.170.130.192" src_port="443" dst_port="49205"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.17267,1.347,010,0 0 0 0 0 0 0 0 0 1 1 0,poscaSYN">
+        <slice>
+            <filter src_ip="143.135.121.178" dst_ip="133.140.59.195" src_port="32766"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="0.917029,1.33276,504,0 0 0 1 0 0 0 0 0 0 1 0,mptmp">
+        <slice>
+            <filter src_ip="17.217.170.126" src_port="5223"/>
+            <filter src_ip="17.88.175.212" src_port="443"/>
+            <filter dst_ip="163.170.125.64" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.17267,1.347,010,0 0 0 0 0 0 0 0 0 1 1 0,point_to_point">
+        <slice>
+            <filter src_ip="202.22.200.47" dst_ip="170.85.159.49" src_port="9425"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.09724,1.33806,010,0 0 0 1 0 0 0 0 0 1 1 0,ptmp">
+        <slice>
+            <filter src_ip="167.144.162.69"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.09724,1.33806,504,0 0 0 1 0 0 0 0 0 1 1 0,mptpla">
+        <slice>
+            <filter dst_ip="163.170.26.154" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.17267,1.347,504,0 0 0 0 0 0 0 0 0 1 1 0,alphfl">
+        <slice>
+            <filter src_ip="212.165.203.178" dst_ip="163.170.125.117" src_port="443" dst_port="50148"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.29024,1.37657,010,1 0 0 0 0 0 0 0 0 1 1 0,mptp">
+        <slice>
+            <filter dst_ip="139.123.224.55" src_port="6379"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.17267,1.347,999,0 0 0 0 0 0 0 0 0 1 1 0,alphfl">
+        <slice>
+            <filter src_ip="163.170.65.39" dst_ip="152.67.248.219"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.17267,1.347,504,0 0 0 0 0 0 0 0 0 1 1 0,mptp">
+        <slice>
+            <filter dst_ip="163.170.22.125" dst_port="443"/>
+            <filter dst_ip="163.170.22.125"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.17267,1.347,999,0 0 0 0 0 0 0 0 0 1 1 0,mptmp">
+        <slice>
+            <filter src_ip="162.8.253.146"/>
+            <filter dst_ip="202.22.201.3"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.05498,1.4289,504,0 0 0 0 1 0 0 0 0 0 0 0,mptmp">
+        <slice>
+            <filter src_ip="23.214.212.155" dst_ip="163.170.125.231"/>
+            <filter src_ip="23.214.212.155" dst_ip="163.170.8.172"/>
+            <filter src_ip="23.214.212.155" src_port="443"/>
+            <filter src_ip="23.102.183.27" dst_ip="163.170.125.231" src_port="443"/>
+            <filter src_ip="23.102.183.27" dst_ip="163.170.8.172" src_port="443"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628312811"/>
+    </anomaly>
+    <anomaly type="suspicious" value="1.33012,1.44179,999,0 0 0 0 0 0 0 0 0 1 0 1,mptmp">
+        <slice>
+            <filter src_ip="162.8.253.146"/>
+            <filter dst_ip="202.22.201.3"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.58596,1.54714,504,1 1 1 1 0 0 0 0 0 1 1 0,alphfl">
+        <slice>
+            <filter src_ip="163.170.123.230" dst_ip="140.73.151.74" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.58596,1.54714,010,1 1 1 1 0 0 0 0 0 1 1 0,ntscSYN">
+        <slice>
+            <filter src_ip="104.124.167.4" src_port="51658" dst_port="22211"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.4445,1.4419,012,1 1 0 0 0 0 0 0 0 1 1 0,ptmp">
+        <slice>
+            <filter src_ip="139.123.224.55" dst_port="6379"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.94984,1.68404,504,1 1 1 0 0 0 0 0 0 1 1 1,alphfl">
+        <slice>
+            <filter src_ip="14.0.85.173" dst_ip="163.170.130.159" src_port="443" dst_port="49960"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.63906,1.55488,011,1 1 1 0 0 0 0 0 0 1 1 0,ptmp">
+        <slice>
+            <filter src_ip="209.229.139.205" src_port="3135" dst_port="9090"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="3.00701,2.45641,999,1 1 1 1 1 1 1 0 0 1 1 1,mptmp">
+        <slice>
+            <filter src_ip="74.175.15.154"/>
+            <filter src_ip="62.83.173.237" src_port="9999" dst_port="5060"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="3.00701,2.45641,010,1 1 1 1 1 1 1 0 0 1 1 1,mptmp">
+        <slice>
+            <filter src_ip="89.199.103.98" dst_port="26301"/>
+            <filter src_ip="45.99.194.245" src_port="43538"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="3.00701,2.45641,999,1 1 1 1 1 1 1 0 0 1 1 1,ntscUDPOther">
+        <slice>
+            <filter src_ip="146.96.11.228" src_port="1901" dst_port="1900"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="3.00701,2.45641,010,1 1 1 1 1 1 1 0 0 1 1 1,ntscSYN">
+        <slice>
+            <filter src_ip="221.130.90.207" src_port="9090" dst_port="22"/>
+            <filter src_ip="147.196.152.20" src_port="52908" dst_port="4200"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.63906,1.55488,004,1 1 1 0 0 0 0 0 0 1 1 0,ptmp">
+        <slice>
+            <filter src_ip="112.122.9.164" dst_port="445"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="2.40673,1.97295,999,0 0 0 1 1 0 1 1 0 1 1 1,mptmp">
+        <slice>
+            <filter dst_ip="203.93.161.158"/>
+            <filter dst_ip="203.93.161.30" src_port="53"/>
+            <filter dst_ip="203.93.167.187" dst_port="53"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.81328,1.59834,504,0 0 0 1 0 0 1 0 0 1 1 1,mptp">
+        <slice>
+            <filter dst_ip="13.139.43.130" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="2.6004,2.25492,504,0 0 0 1 1 1 0 0 0 1 1 1,mptmp">
+        <slice>
+            <filter dst_ip="163.170.8.70"/>
+            <filter dst_ip="163.170.124.52" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="2.11015,1.79092,010,1 1 1 1 1 0 0 0 0 1 1 1,mptmp">
+        <slice>
+            <filter src_ip="89.199.103.98" dst_port="26301"/>
+            <filter src_ip="163.200.129.110" src_port="56346" dst_port="5070"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.82685,1.67006,010,1 1 1 1 1 0 0 0 0 1 1 0,mptp">
+        <slice>
+            <filter dst_ip="45.198.67.25" src_port="22"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="2.6004,2.25492,504,0 0 0 1 1 1 0 0 0 1 1 1,mptp">
+        <slice>
+            <filter dst_ip="163.170.125.68" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.52292,1.48617,010,0 0 0 1 0 0 0 0 0 1 1 1,mptp">
+        <slice>
+            <filter dst_ip="125.128.95.112" src_port="8529"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.63906,1.55488,999,1 1 1 0 0 0 0 0 0 1 1 0,ntscUDPOther">
+        <slice>
+            <filter src_ip="125.128.95.112" dst_port="787"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.77019,1.7102,504,0 0 0 1 0 0 1 1 0 1 0 0,alphfl">
+        <slice>
+            <filter src_ip="163.170.92.71" dst_ip="13.7.126.68" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.81328,1.59834,504,0 0 0 1 0 0 1 0 0 1 1 1,mptmp">
+        <slice>
+            <filter src_ip="202.22.201.31" dst_port="443"/>
+            <filter dst_ip="54.167.24.215" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="2.11015,1.79092,999,1 1 1 1 1 0 0 0 0 1 1 1,ipv4gretun">
+        <slice>
+            <filter src_ip="203.93.166.119" dst_ip="206.151.19.1"/>
+            <filter src_ip="203.93.166.119" dst_ip="204.198.45.16"/>
+            <filter src_ip="203.93.166.119" dst_ip="50.215.141.30"/>
+            <filter src_ip="203.93.166.119" dst_ip="128.126.133.113"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.85228,1.6385,503,1 0 0 1 1 0 0 0 0 1 1 1,ptmpHTTP">
+        <slice>
+            <filter src_ip="203.93.172.40" src_port="80"/>
+            <filter src_ip="203.93.172.40"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="2.6004,2.25492,504,0 0 0 1 1 1 0 0 0 1 1 1,mptmp">
+        <slice>
+            <filter src_ip="202.247.171.54" dst_ip="13.139.151.233"/>
+            <filter src_ip="202.247.171.54" dst_port="443"/>
+            <filter src_ip="163.170.95.47" dst_ip="13.139.151.233" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="2.03579,1.77744,999,1 0 0 1 0 0 1 1 0 1 1 0,ptmpla">
+        <slice>
+            <filter src_ip="199.122.190.98"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="8.03195,7.34334,011,0 0 0 0 0 0 1 1 1 0 0 0,heavy_hitter">
+        <slice>
+            <filter src_ip="202.22.200.242" dst_ip="91.151.131.177" dst_port="52436"/>
+        </slice>
+        <from usec="0" sec="1628312400"/>
+        <to usec="0" sec="1628312446"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.71517,1.71309,504,0 0 0 0 0 0 1 1 0 0 0 0,alphfl">
+        <slice>
+            <filter src_ip="163.170.92.71" dst_ip="18.194.10.195" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="1628312490"/>
+        <to usec="0" sec="1628312536"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.71517,1.71309,010,0 0 0 0 0 0 1 1 0 0 0 0,sptpDoSSYN">
+        <slice>
+            <filter src_ip="103.140.126.85" dst_ip="202.22.205.26" dst_port="80"/>
+        </slice>
+        <from usec="0" sec="1628313255"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.71517,1.71309,999,0 0 0 0 0 0 1 1 0 0 0 0,ntscUDPUDPrp">
+        <slice>
+            <filter dst_ip="203.93.165.142" src_port="53"/>
+        </slice>
+        <from usec="0" sec="1628313255"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.71517,1.71309,999,0 0 0 0 0 0 1 1 0 0 0 0,alphfl">
+        <slice>
+            <filter src_ip="174.96.136.179" dst_ip="203.93.174.128" dst_port="1194"/>
+        </slice>
+        <from usec="0" sec="1628313255"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.71517,1.71309,999,0 0 0 0 0 0 1 1 0 0 0 0,alphfl">
+        <slice>
+            <filter src_ip="210.186.188.11" dst_ip="203.93.167.168" dst_port="53"/>
+        </slice>
+        <from usec="0" sec="1628313255"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.71517,1.71309,010,0 0 0 0 0 0 1 1 0 0 0 0,mptpHTTP">
+        <slice>
+            <filter dst_ip="103.140.126.85" src_port="80"/>
+        </slice>
+        <from usec="0" sec="1628313255"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.71517,1.71309,010,0 0 0 0 0 0 1 1 0 0 0 0,sptpDoSSYN">
+        <slice>
+            <filter src_ip="103.140.126.85" dst_ip="202.22.201.174" dst_port="80"/>
+        </slice>
+        <from usec="0" sec="1628313255"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.71517,1.71309,999,0 0 0 0 0 0 1 1 0 0 0 0,mptpla">
+        <slice>
+            <filter src_ip="164.123.193.137" dst_ip="202.22.201.181" dst_port="443"/>
+            <filter src_ip="164.123.193.137" dst_ip="202.22.201.181" dst_port="80"/>
+            <filter src_ip="170.85.10.119" dst_ip="202.22.201.181" dst_port="9495"/>
+        </slice>
+        <from usec="0" sec="1628313255"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.71517,1.71309,010,0 0 0 0 0 0 1 1 0 0 0 0,sptpDoSSYN">
+        <slice>
+            <filter src_ip="103.140.126.85" dst_ip="202.22.201.190" dst_port="80"/>
+        </slice>
+        <from usec="0" sec="1628313255"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.71517,1.71309,999,0 0 0 0 0 0 1 1 0 0 0 0,ntscUDPUDPrp">
+        <slice>
+            <filter dst_ip="203.93.162.77" dst_port="53"/>
+        </slice>
+        <from usec="0" sec="1628313255"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.71517,1.71309,010,0 0 0 0 0 0 1 1 0 0 0 0,mptp">
+        <slice>
+            <filter dst_ip="133.4.128.28" dst_port="50356"/>
+        </slice>
+        <from usec="0" sec="1628313255"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.71517,1.71309,999,0 0 0 0 0 0 1 1 0 0 0 0,ntscUDPUDPrp">
+        <slice>
+            <filter dst_ip="203.93.174.228" src_port="123" dst_port="123"/>
+        </slice>
+        <from usec="0" sec="1628313255"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.77019,1.7102,010,0 0 0 1 0 0 1 1 0 1 0 0,poscaSYN">
+        <slice>
+            <filter src_ip="143.135.116.80" dst_ip="202.22.200.242" src_port="32766"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.71517,1.71309,011,0 0 0 0 0 0 1 1 0 0 0 0,point_to_point">
+        <slice>
+            <filter src_ip="202.22.200.242" dst_ip="91.151.128.58" dst_port="53262"/>
+        </slice>
+        <from usec="0" sec="1628313255"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.71517,1.71309,011,0 0 0 0 0 0 1 1 0 0 0 0,heavy_hitter">
+        <slice>
+            <filter src_ip="202.22.200.242" dst_ip="91.151.128.61" dst_port="53258"/>
+        </slice>
+        <from usec="0" sec="1628313255"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.81791,1.71721,999,0 0 0 0 0 0 1 1 0 1 0 0,mptpla">
+        <slice>
+            <filter src_ip="174.96.136.179" dst_ip="203.93.172.2" dst_port="1194"/>
+            <filter src_ip="108.192.2.177" dst_ip="203.93.172.2" dst_port="1194"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.71517,1.71309,010,0 0 0 0 0 0 1 1 0 0 0 0,sptpDoSSYN">
+        <slice>
+            <filter src_ip="103.140.126.85" dst_ip="202.22.205.141" dst_port="80"/>
+        </slice>
+        <from usec="0" sec="1628313255"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.71517,1.71309,999,0 0 0 0 0 0 1 1 0 0 0 0,salphfl">
+        <slice>
+            <filter src_ip="203.93.161.140" dst_ip="68.245.122.17" dst_port="57948"/>
+            <filter src_ip="203.93.161.140" dst_ip="68.245.122.17" dst_port="34617"/>
+        </slice>
+        <from usec="0" sec="1628313255"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.71517,1.71309,010,0 0 0 0 0 0 1 1 0 0 0 0,sptpDoSSYN">
+        <slice>
+            <filter src_ip="103.140.126.85" dst_ip="202.22.201.17" dst_port="80"/>
+        </slice>
+        <from usec="0" sec="1628313255"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.71517,1.71309,010,0 0 0 0 0 0 1 1 0 0 0 0,sptpDoSSYN">
+        <slice>
+            <filter src_ip="103.140.126.85" dst_ip="133.4.4.116" dst_port="80"/>
+        </slice>
+        <from usec="0" sec="1628313255"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.71517,1.71309,010,0 0 0 0 0 0 1 1 0 0 0 0,sptpDoSSYN">
+        <slice>
+            <filter src_ip="103.140.126.85" dst_ip="202.22.205.247" dst_port="80"/>
+        </slice>
+        <from usec="0" sec="1628313255"/>
+        <to usec="0" sec="1628313301"/>
+    </anomaly>
+    <anomaly type="anomalous" value="2.27293,1.91886,999,1 1 1 1 0 0 1 1 0 1 1 0,mptpla">
+        <slice>
+            <filter src_ip="174.96.136.179" dst_ip="203.93.172.38" dst_port="1194"/>
+            <filter src_ip="108.192.2.177" dst_ip="203.93.172.38" dst_port="1194"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="2.6004,2.25492,504,0 0 0 1 1 1 0 0 0 1 1 1,mptp">
+        <slice>
+            <filter dst_ip="198.27.212.43" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="2.6004,2.25492,504,0 0 0 1 1 1 0 0 0 1 1 1,mptp">
+        <slice>
+            <filter dst_ip="163.170.125.230" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.7724,1.61374,504,0 0 0 1 1 0 0 0 0 1 1 1,mptmp">
+        <slice>
+            <filter src_ip="133.19.168.141" dst_port="443"/>
+            <filter src_ip="133.19.168.202" dst_ip="35.91.84.153"/>
+            <filter dst_ip="35.91.84.153" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.52292,1.48617,504,0 0 0 1 0 0 0 0 0 1 1 1,alphfl">
+        <slice>
+            <filter src_ip="13.222.80.39" dst_ip="45.99.194.67" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.61519,1.51302,504,1 0 0 1 0 0 0 0 0 1 1 1,alphfl">
+        <slice>
+            <filter src_ip="140.73.151.74" dst_ip="163.170.123.230" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="2.16264,1.86393,504,0 0 0 1 1 0 1 1 0 1 1 0,mptmp">
+        <slice>
+            <filter dst_port="443"/>
+            <filter src_ip="163.170.213.66" dst_port="53"/>
+            <filter dst_ip="38.162.19.166" dst_port="53"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.52171,1.50545,999,1 0 0 1 1 0 0 0 0 1 1 0,mptmp">
+        <slice>
+            <filter dst_ip="163.170.110.61"/>
+            <filter dst_ip="163.170.31.89" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.52292,1.48617,504,0 0 0 1 0 0 0 0 0 1 1 1,ptmp">
+        <slice>
+            <filter src_ip="202.247.174.105" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="2.6004,2.25492,504,0 0 0 1 1 1 0 0 0 1 1 1,mptp">
+        <slice>
+            <filter dst_ip="163.170.116.8" src_port="443"/>
+            <filter dst_ip="163.170.116.8"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.94984,1.68404,999,1 1 1 0 0 0 0 0 0 1 1 1,ipv4gretun">
+        <slice>
+            <filter dst_ip="203.93.166.119"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.52292,1.48617,503,0 0 0 1 0 0 0 0 0 1 1 1,alphflHTTP">
+        <slice>
+            <filter src_ip="203.93.172.40" dst_ip="124.82.173.237" src_port="80" dst_port="46016"/>
+            <filter src_ip="203.93.172.40" dst_ip="124.82.173.237" src_port="80" dst_port="46008"/>
+            <filter src_ip="203.93.172.40" dst_ip="124.82.173.237" src_port="80" dst_port="45998"/>
+            <filter src_ip="203.93.172.40" dst_ip="124.82.173.237" src_port="80" dst_port="45992"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="2.26748,1.87646,504,0 0 0 0 0 0 1 1 0 1 1 1,ptmpla">
+        <slice>
+            <filter src_ip="203.93.174.162" dst_ip="52.134.70.45" dst_port="443"/>
+            <filter src_ip="203.93.174.162" dst_ip="13.146.152.49" dst_port="443"/>
+            <filter src_ip="203.93.174.162" dst_ip="52.127.199.198" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="2.6004,2.25492,504,0 0 0 1 1 1 0 0 0 1 1 1,mptp">
+        <slice>
+            <filter dst_ip="202.254.247.189" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="2.73377,2.31286,010,1 1 0 1 1 1 0 0 0 1 1 1,ptmp">
+        <slice>
+            <filter src_ip="219.68.2.38" src_port="56093"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="2.6004,2.25492,504,0 0 0 1 1 1 0 0 0 1 1 1,mptmp">
+        <slice>
+            <filter src_ip="185.86.164.29"/>
+            <filter src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.61519,1.51302,504,1 0 0 1 0 0 0 0 0 1 1 1,mptmp">
+        <slice>
+            <filter dst_ip="163.170.27.23" src_port="443"/>
+            <filter dst_ip="163.170.124.208" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.61519,1.51302,504,1 0 0 1 0 0 0 0 0 1 1 1,mptp">
+        <slice>
+            <filter dst_ip="163.170.130.159" src_port="443"/>
+            <filter src_ip="114.109.115.178" dst_ip="163.170.130.159" src_port="53"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.52292,1.48617,504,0 0 0 1 0 0 0 0 0 1 1 1,mptpla">
+        <slice>
+            <filter dst_ip="163.170.8.39" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="2.55025,2.03892,999,1 1 0 1 1 0 1 1 0 1 1 1,mptmp">
+        <slice>
+            <filter src_ip="203.93.172.38" src_port="1194"/>
+            <filter src_ip="133.19.49.130" src_port="1194"/>
+            <filter src_ip="203.93.172.2" src_port="1194"/>
+            <filter src_ip="203.93.174.128" src_port="1194"/>
+            <filter dst_ip="174.96.136.179" src_port="1194"/>
+            <filter dst_ip="108.192.2.177" src_port="1194"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.52292,1.48617,504,0 0 0 1 0 0 0 0 0 1 1 1,mptp">
+        <slice>
+            <filter dst_ip="163.170.199.9" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.47398,1.46164,504,0 0 0 1 0 0 1 0 0 1 1 0,ptmpla">
+        <slice>
+            <filter src_ip="203.93.174.162" dst_ip="52.134.70.45" dst_port="443"/>
+            <filter src_ip="203.93.174.162" dst_ip="52.127.199.198" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.99985,1.6791,504,1 1 0 1 0 0 1 0 0 1 1 1,mptmp">
+        <slice>
+            <filter src_port="443"/>
+            <filter src_ip="17.93.69.250" dst_ip="163.170.131.59" src_port="80"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.60094,1.56793,010,1 0 0 1 1 0 1 0 0 1 0 0,mptmp">
+        <slice>
+            <filter src_ip="23.253.233.211" src_port="80"/>
+            <filter src_ip="192.174.46.41" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.7724,1.61374,503,0 0 0 1 1 0 0 0 0 1 1 1,alphflHTTP">
+        <slice>
+            <filter src_ip="203.93.166.160" dst_ip="54.196.84.238" src_port="80"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.85228,1.6385,504,1 0 0 1 1 0 0 0 0 1 1 1,mptpla">
+        <slice>
+            <filter src_ip="151.69.16.223" dst_ip="163.170.92.22" src_port="443"/>
+            <filter src_ip="151.69.91.63" dst_ip="163.170.92.22" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.57813,1.49423,503,0 0 0 0 0 0 0 0 0 1 1 1,alphflHTTP">
+        <slice>
+            <filter src_ip="67.27.51.1" dst_ip="163.170.23.156" src_port="80"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.57813,1.49423,010,0 0 0 0 0 0 0 0 0 1 1 1,heavy_hitter">
+        <slice>
+            <filter src_ip="133.19.23.144" dst_ip="103.140.126.85" src_port="80"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.57813,1.49423,020,0 0 0 0 0 0 0 0 0 1 1 1,ntscICecrqICecrqdurmterp">
+        <slice>
+            <filter dst_ip="129.74.12.227"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="2.18416,1.78381,020,1 1 1 0 0 0 1 0 0 1 1 1,ntscICec">
+        <slice>
+            <filter src_ip="129.74.12.227"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="2.29342,1.89146,503,1 0 0 1 0 0 1 1 0 1 1 1,mptmp">
+        <slice>
+            <filter dst_ip="203.93.166.160" dst_port="80"/>
+            <filter dst_ip="203.93.172.40" dst_port="80"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.66735,1.52094,504,1 0 0 0 0 0 0 0 0 1 1 1,mptpla">
+        <slice>
+            <filter src_ip="52.134.70.45" dst_ip="203.93.174.162" src_port="443"/>
+            <filter src_ip="13.146.152.49" dst_ip="203.93.174.162" src_port="443"/>
+            <filter src_ip="52.127.199.198" dst_ip="203.93.174.162" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.52292,1.48617,053,0 0 0 1 0 0 0 0 0 1 1 1,mptmp">
+        <slice>
+            <filter src_port="80"/>
+            <filter src_ip="163.170.22.125" src_port="443"/>
+            <filter dst_ip="185.66.84.115" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.57813,1.49423,504,0 0 0 0 0 0 0 0 0 1 1 1,alphfl">
+        <slice>
+            <filter src_ip="0.0.0.0" dst_ip="23.13.236.50" src_port="443" dst_port="2560"/>
+            <filter src_ip="0.0.0.0" dst_ip="23.13.236.50" src_port="80" dst_port="2560"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.57813,1.49423,999,0 0 0 0 0 0 0 0 0 1 1 1,mptpla">
+        <slice>
+            <filter src_ip="202.247.169.199" dst_ip="212.133.109.133" src_port="25"/>
+            <filter src_ip="202.247.171.243" dst_ip="212.133.109.133" src_port="25"/>
+            <filter src_ip="202.247.174.120" dst_ip="212.133.109.133" src_port="25"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="2.6004,2.25492,504,0 0 0 1 1 1 0 0 0 1 1 1,mptp">
+        <slice>
+            <filter dst_ip="163.170.30.185" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="2.6004,2.25492,504,0 0 0 1 1 1 0 0 0 1 1 1,mptmp">
+        <slice>
+            <filter dst_ip="163.170.125.117" src_port="443"/>
+            <filter dst_ip="163.170.130.197" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.52292,1.48617,504,0 0 0 1 0 0 0 0 0 1 1 1,mptp">
+        <slice>
+            <filter dst_ip="163.170.8.172" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.90542,1.67689,504,1 1 1 1 0 0 0 0 0 1 1 1,alphfl">
+        <slice>
+            <filter src_ip="99.148.149.132" dst_ip="45.99.194.67" src_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.57813,1.49423,504,0 0 0 0 0 0 0 0 0 1 1 1,alphfl">
+        <slice>
+            <filter src_ip="13.221.11.61" dst_ip="163.170.208.224" src_port="443" dst_port="57426"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.52292,1.48617,504,0 0 0 1 0 0 0 0 0 1 1 1,alphfl">
+        <slice>
+            <filter src_ip="45.99.194.67" dst_ip="99.148.149.132" dst_port="443"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+    <anomaly type="anomalous" value="1.57813,1.49423,504,0 0 0 0 0 0 0 0 0 1 1 1,alphfl">
+        <slice>
+            <filter src_ip="23.207.28.186" dst_ip="203.93.172.63" src_port="443" dst_port="47917"/>
+            <filter src_ip="23.207.28.186" dst_ip="203.93.172.63" src_port="443" dst_port="9616"/>
+            <filter src_ip="23.207.28.186" dst_ip="203.93.172.63" src_port="443" dst_port="9612"/>
+        </slice>
+        <from usec="0" sec="0"/>
+        <to usec="0" sec="2147483645"/>
+    </anomaly>
+</admd:annotation>
